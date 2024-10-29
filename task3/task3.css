@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.rectangle{
+    width:300px;
+    height: 150px;
+    border: 2px solid;
+    background-color: aqua;
+    position:absolute;
+
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 6px solid white;
+    border-radius: 50%;
+    background-color: rgb(231, 38, 170);
+    position: relative;
+    top:-80px;
+}
+.rectangle::before{
+    content:"";
+    border-top-left-radius:20px;
+}
+.circle::after{
+    content:"";
+    border-top-right-radius:20px;
+}
